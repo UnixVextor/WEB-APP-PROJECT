@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "KGtHkrNp2DGFgSFQEdNcJZFnL7W0GOh60E7fx2JKHxbiJbmUrq+29lbUX6oVQDlrzMaqIPN2d9aNpeNeRgDoKQ==",
+  "success": true,
+  "projectFilePath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB_APP_PROJECT\\BackEnd\\BackEnd\\BackEnd.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CyberGEN\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\CyberGEN\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\CyberGEN\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\CyberGEN\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\CyberGEN\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\CyberGEN\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
