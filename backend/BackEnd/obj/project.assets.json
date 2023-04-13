@@ -442,11 +442,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB_APP_PROJECT\\BackEnd\\BackEnd\\BackEnd.csproj",
+      "projectUniqueName": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\BackEnd\\BackEnd.csproj",
       "projectName": "BackEnd",
-      "projectPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB_APP_PROJECT\\BackEnd\\BackEnd\\BackEnd.csproj",
+      "projectPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\BackEnd\\BackEnd.csproj",
       "packagesPath": "C:\\Users\\CyberGEN\\.nuget\\packages\\",
-      "outputPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB_APP_PROJECT\\BackEnd\\BackEnd\\obj\\",
+      "outputPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\BackEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CyberGEN\\AppData\\Roaming\\NuGet\\NuGet.Config",

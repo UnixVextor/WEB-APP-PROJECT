@@ -9,37 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BackEnd
 build_property.RootNamespace = BackEnd
-build_property.ProjectDir = D:\KMITL\KMITL@2.65\Web App\WEB_APP_PROJECT\BackEnd\BackEnd\
+build_property.ProjectDir = D:\KMITL\KMITL@2.65\Web App\WEB-APP-PROJECT\backend\BackEnd\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\KMITL\KMITL@2.65\Web App\WEB_APP_PROJECT\BackEnd\BackEnd
+build_property.MSBuildProjectDirectory = D:\KMITL\KMITL@2.65\Web App\WEB-APP-PROJECT\backend\BackEnd
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/KMITL/KMITL@2.65/Web App/WEB_APP_PROJECT/BackEnd/BackEnd/Views/Home/Index.cshtml]
+[D:/KMITL/KMITL@2.65/Web App/WEB-APP-PROJECT/backend/BackEnd/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KMITL/KMITL@2.65/Web App/WEB_APP_PROJECT/BackEnd/BackEnd/Views/Home/Privacy.cshtml]
+[D:/KMITL/KMITL@2.65/Web App/WEB-APP-PROJECT/backend/BackEnd/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KMITL/KMITL@2.65/Web App/WEB_APP_PROJECT/BackEnd/BackEnd/Views/Shared/Error.cshtml]
+[D:/KMITL/KMITL@2.65/Web App/WEB-APP-PROJECT/backend/BackEnd/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KMITL/KMITL@2.65/Web App/WEB_APP_PROJECT/BackEnd/BackEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/KMITL/KMITL@2.65/Web App/WEB-APP-PROJECT/backend/BackEnd/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KMITL/KMITL@2.65/Web App/WEB_APP_PROJECT/BackEnd/BackEnd/Views/_ViewImports.cshtml]
+[D:/KMITL/KMITL@2.65/Web App/WEB-APP-PROJECT/backend/BackEnd/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KMITL/KMITL@2.65/Web App/WEB_APP_PROJECT/BackEnd/BackEnd/Views/_ViewStart.cshtml]
+[D:/KMITL/KMITL@2.65/Web App/WEB-APP-PROJECT/backend/BackEnd/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/KMITL/KMITL@2.65/Web App/WEB_APP_PROJECT/BackEnd/BackEnd/Views/Shared/_Layout.cshtml]
+[D:/KMITL/KMITL@2.65/Web App/WEB-APP-PROJECT/backend/BackEnd/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ntp181vva5
