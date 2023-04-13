@@ -1,4 +1,0 @@
-[submodule "WEB-APP-FRONTEND"]
-	path = WEB-APP-FRONTEND
-	url = https://github.com/UnixVextor/WEB-APP-FRONTEND.git
-	branch = master
