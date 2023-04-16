@@ -90,7 +90,7 @@ namespace Backend.Controllers
             {
                 return NotFound();
             }
-            return new User { UserName = user.UserName, Password = user.Password};
+            return user;
         }
 
 
