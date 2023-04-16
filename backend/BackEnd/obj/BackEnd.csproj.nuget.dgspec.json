@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KMITL\\KMITL@2.65\\Web App\\WEB_APP_PROJECT\\BackEnd\\BackEnd\\BackEnd.csproj": {}
+    "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "D:\\KMITL\\KMITL@2.65\\Web App\\WEB_APP_PROJECT\\BackEnd\\BackEnd\\BackEnd.csproj": {
+    "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB_APP_PROJECT\\BackEnd\\BackEnd\\BackEnd.csproj",
-        "projectName": "BackEnd",
-        "projectPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB_APP_PROJECT\\BackEnd\\BackEnd\\BackEnd.csproj",
-        "packagesPath": "C:\\Users\\CyberGEN\\.nuget\\packages\\",
-        "outputPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB_APP_PROJECT\\BackEnd\\BackEnd\\obj\\",
+        "projectUniqueName": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj",
+        "projectName": "Backend",
+        "projectPath": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\66918\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CyberGEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\66918\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,12 +37,30 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.2.3, )"
             }
           },
           "imports": [
@@ -64,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
