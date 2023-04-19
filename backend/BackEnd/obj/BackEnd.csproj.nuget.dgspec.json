@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\BackEnd\\BackEnd.csproj": {}
   },
   "projects": {
@@ -12,21 +13,34 @@
         "projectPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\BackEnd\\BackEnd.csproj",
         "packagesPath": "C:\\Users\\CyberGEN\\.nuget\\packages\\",
         "outputPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\BackEnd\\obj\\",
+=======
+    "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj",
+        "projectName": "Backend",
+        "projectPath": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\66918\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\obj\\",
+>>>>>>> bee99d1233c2050705c4fd29249519d0f901e5f7
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CyberGEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\66918\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,12 +51,20 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.2.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -64,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
