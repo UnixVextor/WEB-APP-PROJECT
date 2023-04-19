@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj": {}
+    "C:\\Users\\66918\\Desktop\\ProjectReal\\Backend\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj": {
+    "C:\\Users\\66918\\Desktop\\ProjectReal\\Backend\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\66918\\Desktop\\ProjectReal\\Backend\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj",
+        "projectPath": "C:\\Users\\66918\\Desktop\\ProjectReal\\Backend\\Backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\66918\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\obj\\",
+        "outputPath": "C:\\Users\\66918\\Desktop\\ProjectReal\\Backend\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\66918\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,27 +40,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.Cors": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[7.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.5, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
