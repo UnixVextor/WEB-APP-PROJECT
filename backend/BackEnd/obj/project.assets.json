@@ -996,27 +996,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\66918\\.nuget\\packages\\": {}
+    "C:\\Users\\CyberGEN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\BackEnd\\BackEnd.csproj",
-      "projectName": "BackEnd",
-      "projectPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\BackEnd\\BackEnd.csproj",
-      "packagesPath": "C:\\Users\\CyberGEN\\.nuget\\packages\\",
-      "outputPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\BackEnd\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj",
+      "projectUniqueName": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\Backend.csproj",
-      "packagesPath": "C:\\Users\\66918\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\66918\\source\\repos\\WEB-APP-PROJECT\\Backend\\Backend\\obj\\",
->>>>>>> bee99d1233c2050705c4fd29249519d0f901e5f7
+      "projectPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\Backend\\Backend.csproj",
+      "packagesPath": "C:\\Users\\CyberGEN\\.nuget\\packages\\",
+      "outputPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\66918\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CyberGEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1074,8 +1066,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\backend\\Backend\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

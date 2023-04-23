@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Backend.Models;
-using System.Data.SqlClient;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;

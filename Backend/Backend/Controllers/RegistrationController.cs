@@ -4,7 +4,6 @@ using Microsoft.Extensions.Configuration;
 using Backend.Models;
 using System.Data.SqlClient;
 using System.Data;
-using System.Data.SqlClient;
 using System.Configuration;
 
 namespace Backend.Controllers
@@ -31,12 +30,9 @@ namespace Backend.Controllers
             {
                 return "Data inserted";
             }
-            else
-            {
-                return "Error";
-            }
-            return "";
+            return "Error";
         }
+
         [HttpPost]
         [Route("login")]
         public string login(UserRegistration userRegistration)
