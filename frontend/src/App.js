@@ -1,15 +1,17 @@
 import './App.css';
+import Header from './Components/Header';
 import Registration from './Registration';
 import Login from './Login';
+import ChoiceForOrder from './ChoiceForOrder';
 
-
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Registration /><br>
-      </br>
+      <Header />
+      {/* <ChoiceForOrder /> */}
+      <Registration />
       {/* <Login /> */}
-      </div>
+    </div>
   );
 }
 
