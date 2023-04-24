@@ -3,14 +3,16 @@ import Header from './Components/Header';
 import Registration from './Registration';
 import Login from './Login';
 import ChoiceForOrder from './ChoiceForOrder';
+import ChooseStore from './ChooseStore';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App font-noto">
       <Header />
-      {/* <ChoiceForOrder /> */}
-      <Registration />
+      {/* <Registration /> */}
       {/* <Login /> */}
+      {/* <ChoiceForOrder /> */}
+      <ChooseStore />
     </div>
   );
 }

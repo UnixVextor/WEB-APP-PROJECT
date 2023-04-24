@@ -2,8 +2,8 @@ import React from "react";
 
 function Header() {
     return (
-        <div class="sticky top-0">
-            <div class="relative z-20 border-b bg-[#E6EBA9]">
+        <div class="sticky z-20 top-0">
+            <div class="relative z-20 bg-[#E6EBA9]">
                 <div class="px-6 md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-2">
                     <div class="flex items-center justify-between">
                         <div class="relative z-20">
