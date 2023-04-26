@@ -21,7 +21,10 @@ namespace Backend_MongoDb.Models
         [JsonIgnore]
         public byte[]? Photo {get; set;}
         public Guid RecivedId {get; set;}
-        
+
+        public int Allscore {get; set;}  = 0;
+        public int AverageScore {get; set;} = 0;
+        public int recordOrder {get; set;} = 0;
         // Time Stamp
         public DateTime CreateTime {get; set;} = DateTime.Now;
         public DateTime UpdateTime {get; set;} = DateTime.Now;

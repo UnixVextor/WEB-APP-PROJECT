@@ -120,6 +120,12 @@ namespace Backend_MongoDb.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("Allscore")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AverageScore")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreateTime")
                         .HasColumnType("datetime2");
 
@@ -168,6 +174,9 @@ namespace Backend_MongoDb.Migrations
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("recordOrder")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

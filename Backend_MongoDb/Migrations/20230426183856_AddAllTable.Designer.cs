@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Backend_MongoDb.Migrations
 {
     [DbContext(typeof(dbcontext))]
-    [Migration("20230423203137_AddAllTable")]
+    [Migration("20230426183856_AddAllTable")]
     partial class AddAllTable
     {
         /// <inheritdoc />
@@ -123,6 +123,12 @@ namespace Backend_MongoDb.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("Allscore")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AverageScore")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreateTime")
                         .HasColumnType("datetime2");
 
@@ -171,6 +177,9 @@ namespace Backend_MongoDb.Migrations
                     b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("recordOrder")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
