@@ -7,6 +7,7 @@ function Upload() {
     const [imagesURLs, setImagesURLs] = useState([]);
 
     useEffect(() => {
+        setImagesURLs('https://i.ibb.co/bFZLMgd/Food-Fast-For-U.png')
         if (images.length < 1) return;
         const newImageURLs = [];
         images.forEach(images => newImageURLs.push(URL.createObjectURL(images)));
@@ -23,13 +24,10 @@ function Upload() {
 
     return (
         <Fragment>
-            {imagesURLs.map((imageSrc) => (
-                // { imageSrc } = 'src',
-                <img class="block w-20 h-20 border border-[#E3C67B] rounded-full shadow m-auto mb-2" src={imageSrc} />
-            ))}
             <div>
-                <input type="file" class="text-[calc(60%+0.8vmin)] rounded bg-[#ECD8A5] file:bg-blue-50 file:mr-5 file:rounded w-full h-10"
-                    multiple accept="image/*" onChange={onImageChange} />
+                <img class="block w-20 h-20 border border-[#E3C67B] rounded-full shadow m-auto mb-2" src={imagesURLs} />
+                <input type="file" class="text-[calc(60%+0.8vmin)] rounded bg-[#ECD8A5] file:bg-blue-50 file:mr-5 file:rounded h-10 w-full"
+                    multiple accept="image/*" onChange={onImageChange} />   
             </div>
         </Fragment>
     )

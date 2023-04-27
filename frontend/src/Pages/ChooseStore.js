@@ -1,6 +1,6 @@
 import React from "react";
 import { Fragment } from "react";
-import ImageSlider from "./Components/ImageSlider";
+import ImageSlider from "../Components/ImageSlider";
 
 function ChooseStore() {
     return (

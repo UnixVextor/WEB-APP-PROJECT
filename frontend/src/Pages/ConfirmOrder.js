@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import axios from 'axios';
 
-function Login() {
+function ConfirmOrder() {
     return (
         <Fragment>
             
@@ -9,4 +9,4 @@ function Login() {
     )
 }
 
-export default Login;
+export default ConfirmOrder;

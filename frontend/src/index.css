@@ -7,7 +7,7 @@
     @apply rotate-45 translate-y-1.5;
   }
   .hamburger div:last-child {
-    @apply -rotate-45 -translate-y-1;
+    @apply -rotate-45 -translate-y-1  ;
   }
 }
 

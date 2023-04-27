@@ -4,10 +4,10 @@ function Header() {
     return (
         <div class="sticky z-20 top-0">
             <div class="relative z-20 bg-[#E6EBA9]">
-                <div class="px-6 md:px-12 lg:container lg:mx-auto lg:px-6 lg:py-2">
+                <div class="px-6 lg:container lg:mx-auto lg:px-6 lg:py-2">  
                     <div class="flex items-center justify-between">
-                        <div class="relative z-20">
-                            <a href="#" class="text-[24px]">FoodFastForU</a>
+                        <div class="relative z-20">     
+                            <a href="#" class="font-bold text-[24px]">FoodFastForU</a>
                         </div>
 
                         <div class="flex items-center justify-end border-l lg:border-l-0">
@@ -22,22 +22,22 @@ function Header() {
                                     <ul class="px-6 pt-32 text-gray-700 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
                                         <li>
                                             <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
-                                                <span class="relative bg-[#ECD8A5] group-hover:bg-[#E3C67B] text-[calc(60%+0.8vmin)] rounded py-1 px-2">About Us</span>
+                                                <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">เกี่ยวกับเรา</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
-                                                <span class="relative bg-[#ECD8A5] group-hover:bg-[#E3C67B] text-[calc(60%+0.8vmin)] rounded py-1 px-2">Register</span>
+                                                <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">ติดต่อเรา</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2"> 
+                                                <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">ลงทะเบียน</span> 
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
-                                                <span class="relative bg-[#ECD8A5] group-hover:bg-[#E3C67B] text-[calc(60%+0.8vmin)] rounded py-1 px-2">Login</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2 before:origin-right before:scale-x-0 before:bg-cyan-100 before:transition before:duration-200 hover:before:origin-left hover:before:scale-x-100">
-                                                <span class="relative bg-[#ECD8A5] group-hover:bg-[#E3C67B] text-[calc(60%+0.8vmin)] rounded py-1 px-2">Contact Us</span>
+                                                <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">ลงชื่อเข้าใช้</span>
                                             </a>
                                         </li>
                                     </ul>

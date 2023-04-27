@@ -32,7 +32,7 @@ function Login() {
 
     return (
         <Fragment>
-            <div class='grid grid-col-2 grid-flow-col gap-10 bg-white rounded-[30px] pl-4 pr-4 m-auto mt-28 w-4/5 sm:w-3/5 md:w-3/5 lg:w-3/5 xl:w-2/5'>
+            <div class='grid grid-col-2 grid-flow-col gap-10 bg-white rounded-[30px] pl-4 pr-4 w-4/5 sm:w-3/5 md:w-3/5 lg:w-3/5 xl:w-2/5 m-auto mt-5'>
                 <div>
                     {/* forms */}
                     <div class='text-[30px] mt-5 mb-5'>User Login</div>

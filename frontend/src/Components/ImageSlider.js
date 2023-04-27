@@ -48,7 +48,7 @@ function ImageSlider() {
         <div class='group relative max-w-[640px] h-[360px] w-full m-auto py-4 px-4 '>
             <div
                 style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-                class='w-full h-full rounded-2xl bg-center bg-cover duration-500'
+                class='w-full h-full rounded-2xl bg-center bg-cover duration-200'
             ></div>
 
             {/* Left Arrow */}
@@ -67,7 +67,7 @@ function ImageSlider() {
                         onClick={() => goToSlide(slideIndex)}
                         class='text-2xl cursor-pointer'
                     >
-                        <RxDotFilled class="rounded-full bg-[#ECD8A5] p-2 text-base font-medium text-white transition duration-200 hover:bg-[#E3C67B] active:bg-orange-200" />
+                        <RxDotFilled class="rounded-full bg-[#ECD8A5] p-2 text-base font-medium text-white transition duration-500 hover:bg-[#E3C67B] active:bg-orange-200" />
                     </div>
                 ))}
             </div>
