@@ -1,10 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import Registration from './Pages/Registration';
+import Login from './Pages/Login';
+import ChoiceForOrder from './Pages/ChoiceForOrder';
+import ChooseStore from './Pages/ChooseStore';
+import OrderText from './Pages/OrderText';
+import ReceiveOrder from './Pages/ReceiveOrder';
+import OrderDetail from './Pages/OrderDetail';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <p1>hello</p1>
+    <div className="App font-noto">
+      <Header />
+      {/* <Registration /> */}
+      {/* <Login /> */}
+      {/* <ChoiceForOrder /> */}
+      {/* <ChooseStore /> */}
+      {/* <ReceiveOrder/> */}
+      {/* <OrderDetail/> */}
+      <OrderDetail />
     </div>
   );
 }
