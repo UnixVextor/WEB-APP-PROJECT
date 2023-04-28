@@ -51,7 +51,7 @@ function OrderDetail() {
       </div>
         <div className="bg-[#B29A89] rounded-[30px] pl-4 pr-4 w-4/5 h-16 m-auto mt-5 flex items-center justify-center">
         <div className="grid grid-cols-5 gap-20 ">
-          <div className={`w-4/5 h-full flex items-center justify-center font-bold rounded-[30px] ${selectedButton === 0 ? 'bg-green-500' : 'bg-gray-400'}`}>Order Accepted</div>
+          <div className={`w-4/5 h-full flex items-center justify-center font-bold rounded-[30px] ${selectedButton >= 1 ? 'bg-gray-400' : 'bg-green-500'}`}>Order Accepted</div>
           <div className={`w-4/5 h-full flex items-center justify-center font-bold rounded-[30px] ${selectedButton === 1 ? 'bg-green-500' : 'bg-gray-400'}`}>On the way</div>
           <div className={`w-4/5 h-full flex items-center justify-center font-bold rounded-[30px] ${selectedButton === 2 ? 'bg-green-500' : 'bg-gray-400'}`}>Pending</div>
           <div className={`w-4/5 h-full flex items-center justify-center font-bold rounded-[30px] ${selectedButton === 3 ? 'bg-green-500' : 'bg-gray-400'}`}>Accepted Food</div>
