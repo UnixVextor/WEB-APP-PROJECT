@@ -9,11 +9,13 @@ import StatusOrder from './Pages/StatusOrder';
 import AuthNavbar from './Components/AuthNavbar';
 import EditProfile from './Pages/EditProfile';
 import ReceiveOrder from './Pages/ReceiveOrder';
+import RoutingOrderPage from './Pages/RoutingOrderPage';
+
 const App = () => {
   return (
     <div className="App font-noto">
       {/* <Header /> */}
-      <AuthNavbar />
+      {/* <AuthNavbar /> */}
       {/* <EditProfile /> */}
       {/* <Registration /> */}
       {/* <Login />  */}
@@ -21,7 +23,8 @@ const App = () => {
       {/* <ChooseStore /> */}
       {/* <OrderText /> */}
       {/* <StatusOrder /> */}
-      <ReceiveOrder />
+      {/* <ReceiveOrder /> */}
+      <RoutingOrderPage />
     </div>
   );
 }
