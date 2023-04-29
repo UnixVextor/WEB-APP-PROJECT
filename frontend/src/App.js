@@ -7,9 +7,14 @@ import ChooseStore from './Pages/ChooseStore';
 import OrderText from './Pages/OrderText';
 import StatusOrder from './Pages/StatusOrder';
 
+//import rider side
+import OrderDetail from './Pages/OrderDetail';
+import YourOrder from './Pages/YourOrder';
+import ReceiveOrder from './Pages/ReceiveOrder';
+import RoutingOrderPage from './Pages/RoutingOrderPage';
+
 const App = () => {
   return (
-<<<<<<< HEAD
     <div className="App font-noto">
       <Header />
       {/* <Registration /> */}
@@ -17,11 +22,11 @@ const App = () => {
       {/* <ChoiceForOrder /> */}
       {/* <ChooseStore /> */}
       {/* <OrderText /> */}
+      {/* <OrderDetail /> */}
+      {/* <YourOrder /> */}
+      {/* <ReceiveOrder /> */}
+      {/* <RoutingOrderPage /> */}
       <StatusOrder />
-=======
-    <div className="App">
-      <p1>hello</p1>
->>>>>>> fd0a08f7957cccef9a236db2655ecd75a423d901
     </div>
   );
 }
