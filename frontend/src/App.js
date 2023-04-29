@@ -1,5 +1,18 @@
 import './App.css';
 import Header from './Components/Header';
+import Home from './Home';
+import MenuTechNoInter from './MenuTechNoInter';
+import MenuPaSri from './MenuPaSri';
+import MenuINhauy from './MenuINhauy';
+import MenuMaMa from './MenuMaMa';
+import MenuNaRong from './MenuNaRong';
+import MenuBillion from './MenuBillion';
+import MenuItList from './MenuItList';
+import MenuIYen from './MenuIYen';
+import MenuPFon from './MenuPFon';
+import MenuOChaNa from './MenuOChaNa';
+import MenuCurry from './MenuCurry';
+
 import Registration from './Pages/Registration';
 import Login from './Pages/Login';
 import ChoiceForOrder from './Pages/ChoiceForOrder';
@@ -19,6 +32,22 @@ const App = () => {
     <div className="App font-noto">
       <Header />
       {/* <Registration /> */}
+      {/* <Login /> */}
+      {/* <ChoiceForOrder /> */}
+      {/* <ChooseStore /> */}
+      {/* <ชื่อไฟล์></> */}
+      <Home/>
+      <MenuTechNoInter/>
+      <MenuPaSri/>
+      <MenuINhauy/>
+      <MenuMaMa/>
+      <MenuNaRong/>
+      <MenuBillion/>
+      <MenuItList/>
+      <MenuIYen/>
+      <MenuPFon/>
+      <MenuOChaNa/>
+      <MenuCurry/>
       {/* <Login />  */}
       {/* <ChoiceForOrder /> */}
       {/* <ChooseStore /> */}
@@ -29,6 +58,7 @@ const App = () => {
       {/* <ReceiveOrder /> */}
       {/* <RoutingOrderPage /> */}
       {/* <StatusOrder /> */}
+      <StatusOrder />
     </div>
   );
 }
