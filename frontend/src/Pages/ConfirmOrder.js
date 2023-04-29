@@ -4,7 +4,6 @@ import axios from 'axios';
 function ConfirmOrder() {
     return (
         <Fragment>
-            
         </Fragment>
     )
 }

@@ -5,8 +5,10 @@ import { Fragment, useState } from 'react';
 import Upload from '../Components/upload';
 
 function Registration() {
-    // const navigate = useNavigate()
 
+    const [error, setError] = useState('กรอกข้อมูลไม่ถูกต้อง');
+
+    // const navigate = useNavigate()
     const [firstname, setFirstname] = useState('')
     const [lastname, setLastname] = useState('')
     const [username, setUsername] = useState('')
@@ -15,7 +17,7 @@ function Registration() {
     const [password, setPassword] = useState('')
     const [confirmPassword, setConfirmPassword] = useState('')
 
-    // const [checkInvalid, setCheckInvalid] = useState(false)
+    const [checkInvalid, setCheckInvalid] = useState(false)
     const [passwordReCheck, setPasswordRecheck] = useState(false)
 
     const enterEvent = async (e) => {
@@ -25,13 +27,15 @@ function Registration() {
     }
 
     const onsubmit = async () => {
-        if (password !== confirmPassword || password === '') {
+        if (firstname.length === 0 || lastname.length === 0 || username.length === 0 || email.length === 0 || phoneNumber.length === 0) {
+            setCheckInvalid(true)
+        }
+        else if (password !== confirmPassword || password === '') {
             setPasswordRecheck(true)
-            // setCheckInvalid(false)
-        } else if (username.length === 0 || firstname.length === 0 || lastname.length === 0) {
-            // setCheckInvalid(true)
+        }
+        else {
             setPasswordRecheck(false)
-        } else {
+            setCheckInvalid(false)
             try {
                 const data = await axios.post(`${process.env.REACT_APP_API}/Auth/Register`, {
                     FirstName: firstname,
@@ -61,55 +65,62 @@ function Registration() {
 
     return (
         <Fragment>
-            <div class='grid grid-flow-col gap-5 bg-white rounded-[30px] pl-10 pr-10 sm:pl-10 md:pl-10 lg:pl-10 xl:pl-0 m-auto mt-[16px] mb-[2px] w-4/5'>
+            <div class='grid grid-flow-col gap-5 bg-white rounded-[30px] pl-5 pr-5 sm:pl-10 sm:pr-10 xl:pl-0 m-auto mt-[16px] mb-[2px] sm:w-4/5'>
                 <img
                     src="https://i.ibb.co/bFZLMgd/Food-Fast-For-U.png"
-                    class="hidden xl:block w-[482px]"
+                    class="hidden xl:block w-[483px]"
                     alt="..." />
                 <div>
-                    <div class='text-[calc(70%+0.8vmin)] mt-6 mb-2'>Yay, Welcome to our service!<br></br>Give us the basics about your information</div>
+                    <div class='text-[calc(80%+0.8vmin)] mt-6 mb-2'>ยินดีต้อนรับเข้าสู่บริการของ FoodFastForU!<br></br>โปรดให้ข้อมูลของคุณกับเรา</div>
                     <div class="flex flex-col-reverse md:grid gap-2 md:grid-cols-2">
                         <div>
                             <div class="mb-3">
-                                <label for="firstname" class="grid justify-items-start block text-base">Firstname</label>
-                                <input type="text" id="txtUsername" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="John" required value={firstname} onChange={e => setFirstname(e.target.value)} onKeyDown={enterEvent} />
+                                <label for="firstname" class="grid justify-items-start block text-base">ชื่อจริง</label>
+                                <input type="text" id="txtUsername" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="Jardani" required value={firstname} onChange={e => setFirstname(e.target.value)} onKeyDown={enterEvent} />
                             </div>
                             <div class="mb-3">
-                                <label for="lastname" class="grid justify-items-start block text-base">Lastname</label>
-                                <input type="text" id="txtlastname" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="Doe" required value={lastname} onChange={e => setLastname(e.target.value)} onKeyDown={enterEvent} />
+                                <label for="lastname" class="grid justify-items-start block text-base">นามสกุล</label>
+                                <input type="text" id="txtlastname" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="Jovonovich" required value={lastname} onChange={e => setLastname(e.target.value)} onKeyDown={enterEvent} />
                             </div>
                         </div>
                         <div class=''>
-                            <label for="Upload_photo" class="grid block text-base">Upload a photo</label>
+                            <label for="Upload_photo" class="grid block text-base">อัพโหลดรูปภาพ</label>
                             <Upload />
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="Username" class="grid justify-items-start block text-base">Username</label>
-                        <input type="text" id="txtUsername" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="JohnDoe1" required value={username} onChange={e => setUsername(e.target.value)} onKeyDown={enterEvent} />
+                        <label for="Username" class="grid justify-items-start block text-base">รหัสนักศึกษา</label>
+                        <input type="text" id="txtUsername" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="6401XXXX" required value={username} onChange={e => setUsername(e.target.value)} onKeyDown={enterEvent} />
                     </div>
                     <div class="mb-3">
-                        <label for="E-mail" class="grid justify-items-start block text-m">E-mail</label>
-                        <input type="email" id="txtEmail" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="john.doe@email.com" required value={email} onChange={e => setEmail(e.target.value)} onKeyDown={enterEvent} />
+                        <div class="flex gap-5">
+                            <label for="E-mail" class="grid justify-items-start block text-m">อีเมล</label>
+                            {/* {email ? '' : <label class="text-red-500">ยังไม่ได้กรอกข้อมูล</label>} */}
+                        </div>
+                        <input type="email" id="txtEmail" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="6401XXXX@email.com" required value={email} onChange={e => setEmail(e.target.value)} onKeyDown={enterEvent} />
                     </div>
                     <div class="mb-3">
-                        <label for="phone" class="grid justify-items-start block text-m">Phone Number</label>
+                        <div class="flex gap-5">
+                            <label for="phone" class="grid justify-items-start block text-m">เบอร์โทรศัพท์</label>
+                            {/* {phoneNumber ? '' : error} */}
+                            {/* {phoneNumber ? '' : <label class="text-red-500">ยังไม่ได้กรอกข้อมูล</label>} */}
+                        </div>
                         <input type="tel" id="phone" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="0123456789" pattern="[0-9]{10}" required value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} onKeyDown={enterEvent} />
                     </div>
                     <div class="grid gap-2 md:grid-cols-2">
                         <div class="mb-3">
-                            <label for="password" class="grid justify-items-start block text-m">Password</label>
-                            <input type="password" id="password" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="Enter Password" required value={password} onChange={e => setPassword(e.target.value)} onKeyDown={enterEvent} />
+                            <label for="password" class="grid justify-items-start block text-m">รหัสผ่าน</label>
+                            <input type="password" id="password" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="ใส่รหัสผ่าน" required value={password} onChange={e => setPassword(e.target.value)} onKeyDown={enterEvent} />
                         </div>
                         <div class="">
-                            <label for="confirm_password" class="grid justify-items-start block text-m">Confirm Password</label>
-                            <input type="password" id="confirm_password" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="Enter Confirm Password" required value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} onKeyDown={enterEvent} />
+                            <label for="confirm_password" class="grid justify-items-start block text-m">ยืนยันรหัสผ่าน</label>
+                            <input type="password" id="confirm_password" class="bg-[#EBEBEB] border border-gray-200 text-base rounded block w-full p-2.5" placeholder="ใส่รหัสผ่าน" required value={confirmPassword} onChange={e => setConfirmPassword(e.target.value)} onKeyDown={enterEvent} />
                         </div>
                     </div>
-                    {/* {checkInvalid ? <label className='p-2 text-[red] sm:text-xl text-lg'>*กรุณาใส่ Username, First Name และ Last Name</label> : ''} */}
-                    {passwordReCheck ? <label className='text-red-500 text-m'>** Password และ Confirm Password ไม่ถูกต้อง **</label> : ''}
+                    {checkInvalid ? <label className='text-red-500 text-m'>** กรอกข้อมูลไม่ครบถ้วน **</label> : ''}
+                    {passwordReCheck ? <label className='text-red-500 text-m'>** รหัสผ่านและการยืนยันรหัสผ่านไม่ถูกต้อง **</label> : ''}
                     <div>
-                        <button class='bg-[#ECD8A5] hover:bg-[#E3C67B] text-base rounded font-bold py-2 px-3 mt-6 mb-6' onClick={onsubmit}>SIGN UP</button>
+                        <button class='bg-[#ECD8A5] hover:bg-[#E3C67B] text-base rounded font-bold py-2 px-3 mt-6 mb-6' onClick={onsubmit}>ลงทะเบียน</button>
                     </div>
                 </div>
             </div>

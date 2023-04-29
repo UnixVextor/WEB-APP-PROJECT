@@ -5,16 +5,19 @@ import Login from './Pages/Login';
 import ChoiceForOrder from './Pages/ChoiceForOrder';
 import ChooseStore from './Pages/ChooseStore';
 import OrderText from './Pages/OrderText';
+import StatusOrder from './Pages/StatusOrder';
+
 
 const App = () => {
   return (
     <div className="App font-noto">
       <Header />
       {/* <Registration /> */}
-      {/* <Login /> */}
+      {/* <Login />  */}
       {/* <ChoiceForOrder /> */}
       {/* <ChooseStore /> */}
-      <OrderText />
+      {/* <OrderText /> */}
+      <StatusOrder />
     </div>
   );
 }
