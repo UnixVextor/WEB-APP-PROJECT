@@ -4,6 +4,7 @@ import Registration from './Registration';
 import Login from './Login';
 import ChoiceForOrder from './ChoiceForOrder';
 import ChooseStore from './ChooseStore';
+import Home from './Home';
 import MenuTechNoInter from './MenuTechNoInter';
 import MenuPaSri from './MenuPaSri';
 import MenuINhauy from './MenuINhauy';
@@ -25,7 +26,7 @@ const App = () => {
       {/* <ChoiceForOrder /> */}
       {/* <ChooseStore /> */}
       {/* <ชื่อไฟล์></> */}
-      {/* <Home/> */}
+      <Home/>
       <MenuTechNoInter/>
       <MenuPaSri/>
       <MenuINhauy/>
