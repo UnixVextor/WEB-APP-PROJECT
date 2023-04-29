@@ -1,45 +1,29 @@
 import './App.css';
 import Header from './Components/Header';
-import ReceiveOrder from './Pages/ReceiveOrder';
-import OrderDetail from './Pages/OrderDetail';
-import YourOrder from './Pages/YourOrder';
-import RoutingOrderPage from './Pages/RoutingOrderPage';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-//Rider side Import
-import YourOrder from './Pages/YourOrder';
-import RoutingOrderPage from './Pages/RoutingOrderPage';
-import ReceiveOrder from './Pages/ReceiveOrder';
-import OrderDetail from '.Pages/OrderDetail';
+import Registration from './Pages/Registration';
+import Login from './Pages/Login';
+import ChoiceForOrder from './Pages/ChoiceForOrder';
+import ChooseStore from './Pages/ChooseStore';
+import OrderText from './Pages/OrderText';
+import StatusOrder from './Pages/StatusOrder';
 
 const App = () => {
   return (
+<<<<<<< HEAD
     <div className="App font-noto">
-<<<<<<< Updated upstream
-      <Router>
-        <Header />  
-        <Switch>
-          <Route exact path="/receive-order" component={ReceiveOrder} />
-          <Route exact path="/order-detail" component={OrderDetail} />
-          <Route exact path="/your-order" component={YourOrder} />
-          <Route exact path="/" component={RoutingOrderPage} />
-        </Switch>
-      </Router>
-=======
       <Header />
       {/* <Registration /> */}
       {/* <Login />  */}
       {/* <ChoiceForOrder /> */}
       {/* <ChooseStore /> */}
       {/* <OrderText /> */}
-      {/* <YourOrder /> */}
-      {/* <RoutingOrderPage /> */}
-      {/* <ReceiveOrder /> */}
-      {/* <OrderDetail /> */}
-      <OrderDetail />
->>>>>>> Stashed changes
+      <StatusOrder />
+=======
+    <div className="App">
+      <p1>hello</p1>
+>>>>>>> fd0a08f7957cccef9a236db2655ecd75a423d901
     </div>
   );
 }
-  
+
 export default App;

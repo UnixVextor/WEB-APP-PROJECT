@@ -67,7 +67,7 @@ function ImageSlider() {
                         onClick={() => goToSlide(slideIndex)}
                         class='text-2xl cursor-pointer'
                     >
-                        <RxDotFilled class="rounded-full bg-[#ECD8A5] p-2 text-base font-medium text-white transition duration-500 hover:bg-[#E3C67B] active:bg-orange-200" />
+                        <RxDotFilled class="rounded-full bg-[#ECD8A5] p-2 text-base font-medium text-white transition duration-100 hover:bg-[#E3C67B] active:bg-orange-200" />
                     </div>
                 ))}
             </div>
