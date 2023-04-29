@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header';
+import Registration from './Pages/Registration';
+import Login from './Pages/Login';
+import ChoiceForOrder from './Pages/ChoiceForOrder';
+import ChooseStore from './Pages/ChooseStore';
+import OrderText from './Pages/OrderText';
+import StatusOrder from './Pages/StatusOrder';
 
-function App() {
+//import rider side
+import OrderDetail from './Pages/OrderDetail';
+import YourOrder from './Pages/YourOrder';
+import ReceiveOrder from './Pages/ReceiveOrder';
+import RoutingOrderPage from './Pages/RoutingOrderPage';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App font-noto">
+      <Header />
+      {/* <Registration /> */}
+      {/* <Login />  */}
+      {/* <ChoiceForOrder /> */}
+      {/* <ChooseStore /> */}
+      {/* <OrderText /> */}
+      {/* <OrderDetail /> */}
+      {/* <YourOrder /> */}
+      {/* <ReceiveOrder /> */}
+      {/* <RoutingOrderPage /> */}
+      <StatusOrder />
     </div>
   );
 }
