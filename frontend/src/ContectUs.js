@@ -20,9 +20,10 @@ function ContectUs() {
                     </span>
                     <div class="group grid justify-center">
                         <a href="#" class="group grid justify-center mb-5 rounded-3xl pt-7 pb-5 bg-[#E0D7BF]">
-                            <img class="w-20 mb-5 justify-self-center" src="https://upload.wikimedia.org/wikipedia/th/thumb/e/e4/Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg/1200px-Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg.png"  ></img>
+                            <img class="w-20 mb-5 justify-self-center" src="https://imgz.io/images/2023/04/29/image365db00484dd53cd.png"  ></img>
+
                             <div className='ohm'>
-                                <div class="text-xl mb-5">
+                                <div class="text-xl ">
                                     พนธกร วัลลานนท์<br />
                                     64010552
                                 </div>
@@ -30,9 +31,9 @@ function ContectUs() {
                         </a>
 
                         <a href="#" class="group grid justify-center mb-5 rounded-3xl pt-7 pb-5 bg-[#FFFFFF]">
-                            <img class="w-20 mb-5 justify-self-center" src="https://upload.wikimedia.org/wikipedia/th/thumb/e/e4/Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg/1200px-Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg.png"  ></img>
+                            <img class="w-20 mb-5 justify-self-center" src=" https://imgz.io/images/2023/04/29/img.jpeg"  ></img>
                             <div className='memee'>
-                                <div class="text-xl mb-5">
+                                <div class="text-xl ">
                                     พิมลณัฐ ศรีเผด็จกุลชา<br />
                                     64010605
                                 </div>
@@ -40,9 +41,9 @@ function ContectUs() {
                         </a>
 
                         <a href="#" class="group grid justify-center mb-5 rounded-3xl pt-7 pb-5 bg-[#E0D7BF]">
-                            <img class="w-20 mb-5 justify-self-center" src="https://upload.wikimedia.org/wikipedia/th/thumb/e/e4/Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg/1200px-Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg.png"  ></img>
+                            <img class="w-20 mb-5 justify-self-center" src="https://imgz.io/images/2023/04/29/IMG_6183.jpeg"  ></img>
                             <div className='pich'>
-                                <div class="text-xl mb-5">
+                                <div class="text-xl ">
                                     ภาพพิชญ์ พงศ์พัฒนาวุฒิ<br />
                                     64010670
                                 </div>
@@ -50,9 +51,9 @@ function ContectUs() {
                         </a>
 
                         <a href="#" class="group grid justify-center mb-5 rounded-3xl pt-7 pb-5 bg-[#FFFFFF]">
-                            <img class="w-20 mb-5 justify-self-center" src="https://upload.wikimedia.org/wikipedia/th/thumb/e/e4/Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg/1200px-Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg.png"  ></img>
+                            <img class="w-20 mb-5 justify-self-center" src="https://imgz.io/images/2023/04/29/Worathut.jpeg"  ></img>
                             <div className='petch'>
-                                <div class="text-xl mb-5">
+                                <div class="text-xl">
                                     วรธัช จิตติชัย<br />
                                     64010759
                                 </div>
@@ -60,9 +61,9 @@ function ContectUs() {
                         </a>
 
                         <a href="#" class="group grid justify-center mb-5 rounded-3xl pt-7 pb-5 bg-[#E0D7BF]">
-                            <img class="w-20 mb-5 justify-self-center" src="https://upload.wikimedia.org/wikipedia/th/thumb/e/e4/Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg/1200px-Seal_of_King_Mongkut%27s_Institute_of_Technology_Ladkrabang.svg.png"  ></img>
+                            <img class="w-20 mb-5 justify-self-center" src="https://imgz.io/images/2023/04/29/two.jpeg"  ></img>
                             <div className='two'>
-                                <div class="text-xl mb-5">
+                                <div class="text-xl">
                                     วิฑูรย์ วัชรกฤตเวคิน<br />
                                     64010806
                                 </div>
