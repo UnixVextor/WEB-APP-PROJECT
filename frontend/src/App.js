@@ -6,6 +6,7 @@ import ChoiceForOrder from './Pages/ChoiceForOrder';
 import ChooseStore from './Pages/ChooseStore';
 import OrderText from './Pages/OrderText';
 import StatusOrder from './Pages/StatusOrder';
+import ContectUs from './ContectUs';
 
 //import rider side
 import OrderDetail from './Pages/OrderDetail';
@@ -24,9 +25,10 @@ const App = () => {
       {/* <OrderText /> */}
       {/* <OrderDetail /> */}
       {/* <YourOrder /> */}
+      <ContectUs/>
       {/* <ReceiveOrder /> */}
       {/* <RoutingOrderPage /> */}
-      <StatusOrder />
+      {/* <StatusOrder /> */}
     </div>
   );
 }
