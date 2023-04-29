@@ -6,9 +6,16 @@ import YourOrder from './Pages/YourOrder';
 import RoutingOrderPage from './Pages/RoutingOrderPage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+//Rider side Import
+import YourOrder from './Pages/YourOrder';
+import RoutingOrderPage from './Pages/RoutingOrderPage';
+import ReceiveOrder from './Pages/ReceiveOrder';
+import OrderDetail from '.Pages/OrderDetail';
+
 const App = () => {
   return (
     <div className="App font-noto">
+<<<<<<< Updated upstream
       <Router>
         <Header />  
         <Switch>
@@ -18,6 +25,19 @@ const App = () => {
           <Route exact path="/" component={RoutingOrderPage} />
         </Switch>
       </Router>
+=======
+      <Header />
+      {/* <Registration /> */}
+      {/* <Login />  */}
+      {/* <ChoiceForOrder /> */}
+      {/* <ChooseStore /> */}
+      {/* <OrderText /> */}
+      {/* <YourOrder /> */}
+      {/* <RoutingOrderPage /> */}
+      {/* <ReceiveOrder /> */}
+      {/* <OrderDetail /> */}
+      <OrderDetail />
+>>>>>>> Stashed changes
     </div>
   );
 }
