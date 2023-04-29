@@ -4,11 +4,12 @@ import { Fragment, useState } from 'react';
 // import { useNavigate, Link } from "react-router-dom"
 import Upload from '../Components/upload';
 
-function Registration() {
+function EditProfile() {
+
     const [error, setError] = useState('กรอกข้อมูลไม่ถูกต้อง');
 
     // const navigate = useNavigate()
-    const [firstname, setFirstname] = useState('')
+    const [firstname, setFirstname] = useState("first")
     const [lastname, setLastname] = useState('')
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
@@ -70,7 +71,7 @@ function Registration() {
                     class="hidden xl:block w-[483px]"
                     alt="..." />
                 <div>
-                    <div class='text-[calc(80%+0.8vmin)] mt-6 mb-2'>ยินดีต้อนรับเข้าสู่บริการของ FoodFastForU!<br></br>โปรดให้ข้อมูลของคุณกับเรา</div>
+                    <div class='text-[calc(80%+0.8vmin)] mt-6 mb-2'>แก้ไข้ข้อมูลของท่าน</div>
                     <div class="flex flex-col-reverse md:grid gap-2 md:grid-cols-2">
                         <div>
                             <div class="mb-3">
@@ -119,7 +120,7 @@ function Registration() {
                     {checkInvalid ? <label className='text-red-500 text-m'>** กรอกข้อมูลไม่ครบถ้วน **</label> : ''}
                     {passwordReCheck ? <label className='text-red-500 text-m'>** รหัสผ่านและการยืนยันรหัสผ่านไม่ถูกต้อง **</label> : ''}
                     <div>
-                        <button class='bg-[#ECD8A5] hover:bg-[#E3C67B] text-base rounded font-bold py-2 px-3 mt-6 mb-6' onClick={onsubmit}>ลงทะเบียน</button>
+                        <button class='bg-[#ECD8A5] hover:bg-[#E3C67B] text-base rounded font-bold py-2 px-3 mt-6 mb-6' onClick={onsubmit}>ยืนยัน</button>
                     </div>
                 </div>
             </div>
@@ -127,4 +128,4 @@ function Registration() {
     )
 }
 
-export default Registration;
+export default EditProfile;

@@ -12,8 +12,55 @@ function StatusOrder() {
     const [sendingStatus, setSendingStatus] = useState(false);
     const [confirmStatus, setConfirmStatus] = useState(false);
 
-    const [username] = useState('');
-    const [phoneNumber] = useState('');
+    // const [username] = useState('');
+    // const [phoneNumber] = useState('');
+
+    const starRating = (e) => {
+        if (e == 1) {
+            return (
+                <BsFillStarFill class="text-[#FF7F41]" />
+            )
+        }
+        else if (e == 2) {
+            return (
+                <Fragment>
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                </Fragment>
+            )
+        }
+        else if (e == 3) {
+            return (
+                <Fragment>
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                </Fragment>
+            )
+        }
+        else if (e == 4) {
+            return (
+                <Fragment>
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                </Fragment>
+            )
+        }
+        else if (e == 5) {
+            return (
+                <Fragment>
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                    <BsFillStarFill class="text-[#FF7F41]" />
+                </Fragment>
+            )
+        }
+
+    };
 
     return (
         <Fragment>
@@ -84,11 +131,8 @@ function StatusOrder() {
                                 คะแนนความพึงพอใจ
                             </label>
                             <div class="flex gap-5 text-[calc(100%+0.8vmin)]">
-                                <BsFillStarFill class="text-[#FF7F41]" />
-                                <BsFillStarFill class="text-[#FF7F41]" />
-                                <BsFillStarFill class="text-[#FF7F41]" />
-                                <BsFillStarFill class="text-[#FF7F41]" />
-                                <BsFillStarFill class="text-[#FF7F41]" />
+                                {starRating(4)}
+                                {/* <BsFillStarFill class="text-[#FF7F41]" /> */}
                             </div>
                         </div>
                     </div>

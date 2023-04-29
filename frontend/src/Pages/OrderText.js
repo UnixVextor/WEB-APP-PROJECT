@@ -74,7 +74,7 @@ function OrderText() {
                 </button>
                 <button class="bg-[#BBD9B0] hover:bg-[#9DC88E] text-xl rounded font-medium py-3 px-3 mt-6 mb-5"
                     onClick={() => handleSumOrder()}>
-                    สรุปรายการอาหาร
+                    ยืนยันรายการอาหาร
                 </button>
             </div>
 

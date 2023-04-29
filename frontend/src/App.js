@@ -6,22 +6,21 @@ import ChoiceForOrder from './Pages/ChoiceForOrder';
 import ChooseStore from './Pages/ChooseStore';
 import OrderText from './Pages/OrderText';
 import StatusOrder from './Pages/StatusOrder';
+import AuthNavbar from './Components/AuthNavbar';
+import EditProfile from './Pages/EditProfile';
 
 const App = () => {
   return (
-<<<<<<< HEAD
     <div className="App font-noto">
-      <Header />
+      {/* <Header /> */}
+      <AuthNavbar />
+      {/* <EditProfile /> */}
       {/* <Registration /> */}
       {/* <Login />  */}
       {/* <ChoiceForOrder /> */}
       {/* <ChooseStore /> */}
       {/* <OrderText /> */}
-      <StatusOrder />
-=======
-    <div className="App">
-      <p1>hello</p1>
->>>>>>> fd0a08f7957cccef9a236db2655ecd75a423d901
+      {/* <StatusOrder /> */}
     </div>
   );
 }

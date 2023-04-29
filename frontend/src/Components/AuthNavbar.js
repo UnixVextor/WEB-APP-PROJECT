@@ -1,14 +1,14 @@
 import React from "react";
 
-function Header() {
+function AuthNavbar() {
 
     return (
         <div class="sticky z-20 top-0">
             <div class="relative z-20 bg-[#E6EBA9]">
-                <div class="px-6 lg:container lg:mx-auto lg:px-6 lg:py-2">
+                <div class="px-6 lg:container lg:mx-auto lg:px-3 lg:py-2">
                     <div class="flex items-center justify-between">
                         <a href="#" class="flex relative z-20 items-center">
-                            <img class="w-16 md:w-20 h-auto" src="https://imgz.io/images/2023/04/29/logoWebapp9874287d65c04354.png" alt="logoWebapp9874287d65c04354.png"/>
+                            <img class="w-16 md:w-20 h-auto" src="https://imgz.io/images/2023/04/29/logoWebapp9874287d65c04354.png" alt="logoWebapp9874287d65c04354.png" />
                             <label class="font-bold text-[24px]">FoodFastForU</label>
                         </a>
 
@@ -22,27 +22,26 @@ function Header() {
                             <div class="peer-checked:translate-x-0 fixed inset-0 w-[calc(100%-4.5rem)] translate-x-[-100%] bg-[#E6EBA9] border-r shadow-xl transition duration-400 lg:border-r-0 lg:w-auto lg:static lg:shadow-none lg:translate-x-0">
                                 <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
                                     <ul class="px-6 pt-32 text-gray-700 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
-                                        <li>
-                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
-                                                <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">เกี่ยวกับเรา</span>
-                                            </a>
+                                        <li class="flex justify-center items-center">
+                                            <div class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
+                                                <img class="flex rounded-full border border-[#E3C67B] shadow w-16 h-16" src='https://i.ibb.co/bFZLMgd/Food-Fast-For-U.png' />
+                                            </div>
                                         </li>
-                                        <li>
+                                        <li class="grid justify-center content-center">
+                                            <div class=" group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
+                                                <span class="relative items-center font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded">Username</span>
+                                            </div>
+                                        </li>
+                                        <li class="grid justify-center content-center">
                                             <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
                                                 <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">ติดต่อเรา</span>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
-                                                <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">ลงทะเบียน</span>
-                                            </a>
+                                        <li class="grid justify-center content-center">
+                                            <div class=" group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
+                                                <span class="relative items-center font-bold group-hover:text-red-600 text-[calc(70%+0.8vmin)] rounded">ออกจากระบบ</span>
+                                            </div>
                                         </li>
-                                        <li>
-                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
-                                                <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">ลงชื่อเข้าใช้</span>
-                                            </a>
-                                        </li>
-                                        
                                     </ul>
                                 </div>
                             </div>
@@ -54,4 +53,4 @@ function Header() {
     )
 }
 
-export default Header
+export default AuthNavbar
