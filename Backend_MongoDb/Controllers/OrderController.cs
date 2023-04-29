@@ -61,6 +61,16 @@ namespace Backend_MongoDb.Controllers
             return Ok(response);
         }
 
+        [HttpGet("available")]
+        public async Task<ActionResult<List<Order>>> GatAvailableOrder()
+        {
+            var order = await _dbContext.Oreders.Where(item => item.Status == "Pending").ToListAsync();
+            if(order == null){
+                return NotFound("Not Found Data in Database");
+            }
+            return order;
+        }
+
         [HttpPost("addMenu")]
         public async Task<IActionResult> AddmenuToOrder([FromBody] MenuOrder request)
         {
@@ -129,11 +139,12 @@ namespace Backend_MongoDb.Controllers
         }
 
         [HttpPost("updateOrder")]
-        public async Task<IActionResult> UpdateOrder(Guid OrderId)
+        public async Task<IActionResult> UpdateOrder(Guid OrderId, Guid RiderId,int RiderScore = 0)
         {
             var order = await _dbContext.Oreders.FindAsync(OrderId);
+            var user =  _dbContext.Users.Where(x => x.RecivedId == RiderId).FirstOrDefault();
             var response = new ResponseOrder();
-            if (order == null){
+            if (order == null || user == null){
                 return NotFound();
             }
             response.OrderId = OrderId;
@@ -147,12 +158,30 @@ namespace Backend_MongoDb.Controllers
             }
             order.Status = OrderService.UpdateOrder(order.Status);
             order.UpdateTime = DateTime.Now;
-            
+            user.Allscore += RiderScore;
+            user.recordOrder += 1;
+            user.AverageScore = (int) user.Allscore / user.recordOrder;   
+
             response.Status = order.Status;
             response.Message = "Update Complete.";
             
             await _dbContext.SaveChangesAsync();
             return Ok(response);
+        }
+
+        [HttpGet("getRiderOrder")]
+        public async Task<IActionResult> GetRiderScore(Guid RiderId)
+        {
+            var rider = await _dbContext.Users.Where(x => x.RecivedId == RiderId).FirstOrDefaultAsync();
+            var response = new ResponseUser();
+            if (rider == null){
+                response.UserId = RiderId;
+                response.Status = "Not Complete";
+                response.Message = "Rider Id not found";
+                return NotFound(response);
+            }
+
+            return Ok(rider.AverageScore);
         }
 
         [HttpDelete("deleteOrder/{OrderId}")]
@@ -176,6 +205,8 @@ namespace Backend_MongoDb.Controllers
             await _dbContext.SaveChangesAsync();
             return Ok(response);
         }
+
+
 
     }
 }
