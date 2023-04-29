@@ -9,6 +9,7 @@ import StatusOrder from './Pages/StatusOrder';
 
 const App = () => {
   return (
+<<<<<<< HEAD
     <div className="App font-noto">
       <Header />
       {/* <Registration /> */}
@@ -17,6 +18,10 @@ const App = () => {
       {/* <ChooseStore /> */}
       {/* <OrderText /> */}
       <StatusOrder />
+=======
+    <div className="App">
+      <p1>hello</p1>
+>>>>>>> fd0a08f7957cccef9a236db2655ecd75a423d901
     </div>
   );
 }
