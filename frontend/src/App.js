@@ -7,7 +7,6 @@ import ChooseStore from './Pages/ChooseStore';
 import OrderText from './Pages/OrderText';
 import StatusOrder from './Pages/StatusOrder';
 
-
 const App = () => {
   return (
     <div className="App font-noto">

@@ -1,8 +1,20 @@
 import React, { Fragment, useState } from 'react';
-import { BsCircleFill } from "react-icons/bs";
+import { BsCircleFill, BsFillStarFill } from "react-icons/bs";
 import axios from 'axios';
 
 function StatusOrder() {
+    // 5 Status Order 
+    // if true status dot will be green
+    // if false status dot will be gray
+    const [orderStatus, setOrderStatus] = useState(true);
+    const [goingStatus, setGoingStatus] = useState(false);
+    const [waitingStatus, setWaitingStatus] = useState(false);
+    const [sendingStatus, setSendingStatus] = useState(false);
+    const [confirmStatus, setConfirmStatus] = useState(false);
+
+    const [username] = useState('');
+    const [phoneNumber] = useState('');
+
     return (
         <Fragment>
             <div class="grid gap-3 m-auto mt-2 sm:pl-5 sm:pr-5">
@@ -22,11 +34,11 @@ function StatusOrder() {
                             <img class="w-12 h-12 sm:w-16 sm:h-16" src="https://cdn.discordapp.com/attachments/1046281833949708299/1101588757574078535/image.png" />
                         </div>
                         <div class="z-10 grid grid-cols-5 justify-items-center">
-                            <BsCircleFill />
-                            <BsCircleFill />
-                            <BsCircleFill />
-                            <BsCircleFill />
-                            <BsCircleFill />
+                            {orderStatus ? <BsCircleFill class="text-[#8DB280] border-[#8DB280] rounded-full" /> : <BsCircleFill class="text-[#D9D9D9]" />}
+                            {goingStatus ? <BsCircleFill class="text-[#8DB280]" /> : <BsCircleFill class="text-[#D9D9D9]" />}
+                            {waitingStatus ? <BsCircleFill class="text-[#8DB280]" /> : <BsCircleFill class="text-[#D9D9D9]" />}
+                            {sendingStatus ? <BsCircleFill class="text-[#8DB280]" /> : <BsCircleFill class="text-[#D9D9D9]" />}
+                            {confirmStatus ? <BsCircleFill class="text-[#8DB280]" /> : <BsCircleFill class="text-[#D9D9D9]" />}
                         </div>
                         <div class="grid grid-cols-5 justify-items-center">
                             <label>
@@ -50,13 +62,35 @@ function StatusOrder() {
 
                 <div class="flex gap-5 items-center bg-[#ECD8A5] rounded-xl p-5">
                     <img class="block border border-[#E3C67B] rounded-full shadow w-36 h-36" src="https://i.ibb.co/bFZLMgd/Food-Fast-For-U.png" ></img>
-                    <div class="grid justify-items-start">
-                        <label class="text-[calc(100%+0.8vmin)]">
-                            ชื่อผู้รับฝาก
-                        </label>
-                        <label class="text-[calc(100%+0.8vmin)]">
-                            โทร 09x-xxxx-xxx
-                        </label>
+                    <div class="grid justify-items-start items-center">
+                        <div class="flex gap-2">
+                            <label class="text-[calc(100%+0.8vmin)]">
+                                ชื่อผู้รับฝาก:
+                            </label>
+                            <label class="text-[calc(100%+0.8vmin)]">
+                                Username
+                            </label>
+                        </div>
+                        <div class="flex gap-2">
+                            <label class="text-[calc(100%+0.8vmin)]">
+                                เบอร์โทรศัพท์:
+                            </label>
+                            <label class="text-[calc(100%+0.8vmin)]">
+                                09x-xxxx-xxx
+                            </label>
+                        </div>
+                        <div class="grid gap-1 justify-items-start">
+                            <label class="text-[calc(100%+0.8vmin)]">
+                                คะแนนความพึงพอใจ
+                            </label>
+                            <div class="flex gap-5 text-[calc(100%+0.8vmin)]">
+                                <BsFillStarFill class="text-[#FF7F41]" />
+                                <BsFillStarFill class="text-[#FF7F41]" />
+                                <BsFillStarFill class="text-[#FF7F41]" />
+                                <BsFillStarFill class="text-[#FF7F41]" />
+                                <BsFillStarFill class="text-[#FF7F41]" />
+                            </div>
+                        </div>
                     </div>
                 </div>
 
