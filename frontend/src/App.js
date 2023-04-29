@@ -8,7 +8,7 @@ import OrderText from './Pages/OrderText';
 import StatusOrder from './Pages/StatusOrder';
 import AuthNavbar from './Components/AuthNavbar';
 import EditProfile from './Pages/EditProfile';
-
+import ReceiveOrder from './Pages/ReceiveOrder';
 const App = () => {
   return (
     <div className="App font-noto">
@@ -21,6 +21,7 @@ const App = () => {
       {/* <ChooseStore /> */}
       {/* <OrderText /> */}
       {/* <StatusOrder /> */}
+      <ReceiveOrder />
     </div>
   );
 }
