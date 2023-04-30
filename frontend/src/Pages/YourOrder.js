@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function YourOrder() {
     const [orders, setOrders] = useState([]);
-    
+
     useEffect(() => {
         axios.get('https://example.com/orders')
             .then(response => {
@@ -15,7 +15,7 @@ function YourOrder() {
             });
     }, []);
 
-    return(
+    return (
         <div>
             <div className="text-[26px] mt-5 mb-5 font-bold">Your Orders</div>
             {orders.length === 0 ? (
@@ -23,7 +23,7 @@ function YourOrder() {
             ) : (
                 orders.map(order => (
                     <Link to={'//orderdetail-Path'} key={order.id}>
-                        <div className="grid grid-col-2 grid-flow-col gap-10 bg-white rounded-[30px] pl-4 pr-4 w-4/5 h-342 m-auto mt-5" style={{ backgroundColor: '#CFC7B1' }}>
+                        <div className="grid bg-white rounded-[30px] p-5 w-4/5 h-342 m-auto mt-5" style={{ backgroundColor: '#CFC7B1' }}>
                             <div>
                                 <div className="text-black text-2xl mt-5 mb-5 text-left">
                                     <div style={{ fontSize: '24px' }}>Name: {order.name}</div>
@@ -39,12 +39,12 @@ function YourOrder() {
                 ))
             )}
             <div className="fixed bottom-0 left-0 mb-5 ml-5">
-                <button className="bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded-full">
+                <button className="bg-[#ECD8A5] hover:bg-[#E3C67B] rounded pl-4 pr-4 py-2 px-3 text-xl hover:scale-110 ease-in-out duration-200">
                     HOME
                 </button>
             </div>
         </div>
-    );  
+    );
 }
 
 export default YourOrder;

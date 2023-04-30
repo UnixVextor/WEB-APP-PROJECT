@@ -33,8 +33,7 @@ function ReceiveOrder() {
                 <div className="text-xl text-center">No orders yet</div>
             ) : (
                 orders.map(order => (
-                    <div className="grid
-                     bg-white rounded-[30px] p-5 w-4/5 h-342 m-auto mt-5" style={{ backgroundColor: '#CFC7B1' }}>
+                    <div className="grid bg-white rounded-[30px] p-5 w-4/5 h-342 m-auto mt-5" style={{ backgroundColor: '#CFC7B1' }}>
                         <div>
                             <div className="text-black text-2xl mt-5 mb-5 text-left">
                                 <div style={{ fontSize: '24px' }}>Name: {order.name}</div>
@@ -54,7 +53,7 @@ function ReceiveOrder() {
                 ))
             )}
             <div className="fixed bottom-0 left-0 mb-5 ml-5">
-                <button className="bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded-full">
+                <button className="bg-[#ECD8A5] hover:bg-[#E3C67B] rounded pl-4 pr-4 py-2 px-3 text-xl hover:scale-110 ease-in-out duration-200">
                     HOME
                 </button>
             </div>

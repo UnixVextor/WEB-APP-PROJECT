@@ -119,7 +119,7 @@ function Registration() {
                     {checkInvalid ? <label className='text-red-500 text-m'>** กรอกข้อมูลไม่ครบถ้วน **</label> : ''}
                     {passwordReCheck ? <label className='text-red-500 text-m'>** รหัสผ่านและการยืนยันรหัสผ่านไม่ถูกต้อง **</label> : ''}
                     <div>
-                        <button class='bg-[#ECD8A5] hover:bg-[#E3C67B] text-base rounded font-bold py-2 px-3 mt-6 mb-6' onClick={onsubmit}>ลงทะเบียน</button>
+                        <button class='bg-[#ECD8A5] hover:bg-[#E3C67B] text-lg rounded py-2 px-3 mt-6 mb-6' onClick={onsubmit}>ลงทะเบียน</button>
                     </div>
                 </div>
             </div>

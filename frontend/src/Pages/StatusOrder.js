@@ -65,13 +65,10 @@ function StatusOrder() {
     return (
         <Fragment>
             <div class="grid gap-3 m-auto mt-2 sm:pl-5 sm:pr-5">
-                <label class="text-[calc(100%+0.8vmin)]">
-                    STATUS ORDER
+                <label class="text-[calc(125%+0.8vmin)]">
+                    สถานะรายการอาหาร
                 </label>
-                <div class="">
-                    <label>
-                        ORDER ร้านเจ๊ดาตามสั่งกระทะร้อน
-                    </label>
+                <div>
                     <div class="grid gap-5 bg-[#CFC7B1] rounded-xl pt-3 pb-3 sm:p-5">
                         <div class="grid grid-cols-5 justify-items-center">
                             <img class="w-12 h-12 sm:w-16 sm:h-16" src="https://cdn.discordapp.com/attachments/1046281833949708299/1101588591076986990/image.png" />
@@ -139,10 +136,7 @@ function StatusOrder() {
                 </div>
 
                 <div class="flex justify-evenly">
-                    <button class='bg-[#CDC5AF] hover:bg-[#B9AE90] text-base rounded font-bold py-2 px-3 mt-6 mb-6'>
-                        กลับ
-                    </button>
-                    <button class='bg-[#BBD9B0] hover:bg-[#9DC88E] text-base rounded font-bold py-2 px-3 mt-6 mb-6'>
+                    <button type="button" class="bg-[#BBD9B0] hover:bg-[#9DC88E] rounded py-2 px-3 mt-6 mb-6 hover:scale-110 ease-in-out duration-200">
                         รับ ORDER เรียบร้อย
                     </button>
                 </div>

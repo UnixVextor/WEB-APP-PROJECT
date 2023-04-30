@@ -8,7 +8,7 @@ function AuthNavbar() {
                 <div class="px-6 lg:container lg:mx-auto lg:px-3 lg:py-2">
                     <div class="flex items-center justify-between">
                         <a href="#" class="flex relative z-20 items-center">
-                            <img class="w-16 md:w-20 h-auto" src="https://imgz.io/images/2023/04/29/logoWebapp9874287d65c04354.png" alt="logoWebapp9874287d65c04354.png" />
+                            <img class="w-16 md:w-[4.5rem] h-auto" src="https://imgz.io/images/2023/04/29/logoWebapp9874287d65c04354.png" alt="logoWebapp9874287d65c04354.png" />
                             <label class="font-bold text-[24px]">FoodFastForU</label>
                         </a>
 
