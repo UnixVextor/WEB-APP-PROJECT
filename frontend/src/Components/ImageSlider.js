@@ -6,22 +6,19 @@ import { RxDotFilled } from 'react-icons/rx';
 function ImageSlider() {
     const slides = [
         {
-            url: 'https://www.shutterstock.com/image-photo/thai-food-green-curry-chicken-600w-614654369.jpg',
+            url: 'https://cdn.discordapp.com/attachments/1101922222542700617/1101941636273020988/116581787_3335278366533425_35193450293512469_n_-_Copy.jpg',
         },
         {
-            url: 'https://www.shutterstock.com/image-photo/stir-fry-noodles-vegetables-shrimps-600w-1080504425.jpg',
+            url: 'https://cdn.discordapp.com/attachments/1101922222542700617/1101941636566626365/116595023_3335278006533461_8934114504950405875_n_-_Copy.jpg',
         },
         {
-            url: 'https://www.shutterstock.com/image-photo/take-away-healthy-asian-vietnamese-600w-1649961247.jpg',
+            url: 'https://cdn.discordapp.com/attachments/1101922222542700617/1101941636868603954/116691865_3335278003200128_8075972189638750359_n_-_Copy.jpg',
         },
         {
-            url: 'https://www.shutterstock.com/image-photo/noodles-vegetables-frying-pan-asian-600w-754703101.jpg',
+            url: 'https://cdn.discordapp.com/attachments/1101922222542700617/1101941637153824879/116828682_3335278289866766_2125056584230269756_n.jpg',
         },
         {
-            url: 'https://www.shutterstock.com/image-photo/antipasto-burrata-cheese-tomatoes-basil-600w-2278911851.jpg',
-        },
-        {
-            url: 'https://www.shutterstock.com/image-photo/spaghetti-seafood-pasta-clams-prawns-600w-1337137790.jpg',
+            url: 'https://cdn.discordapp.com/attachments/1101922222542700617/1101941723548094524/116708709_3335278109866784_2626568979002482443_n.jpg',
         },
     ];
 

@@ -21,9 +21,9 @@ function OrderDetail() {
         console.log(error); // log any errors that occurred
       });
   };
-  
-  
-  
+
+
+
   useEffect(() => {
     axios.get(`/orders/${id}`).then((response) => {
       setOrder(response.data);
@@ -49,7 +49,7 @@ function OrderDetail() {
       <div className="bg-[#ECD8A5] rounded-[30px] pl-4 pr-4 w-1/5 h-16 m-auto mt-5 text-black text-xl text-center flex items-center justify-center font-bold">
         Update Status
       </div>
-        <div className="bg-[#B29A89] rounded-[30px] pl-4 pr-4 w-4/5 h-16 m-auto mt-5 flex items-center justify-center">
+      <div className="bg-[#B29A89] rounded-[30px] pl-4 pr-4 w-4/5 h-16 m-auto mt-5 flex items-center justify-center">
         <div className="grid grid-cols-5 gap-20 ">
           <div className={`w-4/5 h-full flex items-center justify-center font-bold rounded-[30px] ${selectedButton >= 1 ? 'bg-gray-400' : 'bg-green-500'}`}>Order Accepted</div>
           <div className={`w-4/5 h-full flex items-center justify-center font-bold rounded-[30px] ${selectedButton === 1 ? 'bg-green-500' : 'bg-gray-400'}`}>On the way</div>
@@ -57,11 +57,11 @@ function OrderDetail() {
           <div className={`w-4/5 h-full flex items-center justify-center font-bold rounded-[30px] ${selectedButton === 3 ? 'bg-green-500' : 'bg-gray-400'}`}>Accepted Food</div>
           <div className={`w-4/5 h-full flex items-center justify-center font-bold rounded-[30px] ${selectedButton === 4 ? 'bg-green-500' : 'bg-gray-400'}`}>Delivered</div>
         </div>
-        </div>
-      <button className="bg-[#CFC7B1] rounded-md pl-4 pr-4 w-48 h-12 absolute bottom-5 left-5 text-black text-xl font-bold">
+      </div>
+      <button className="bg-[#CDC5AF] hover:bg-[#B9AE90] rounded pl-4 pr-4 py-2 px-3 absolute bottom-5 left-5 text-xl hover:scale-110 ease-in-out duration-200">
         Back To Order
       </button>
-      <button className="bg-[#BBD9B0] rounded-md pl-4 pr-4 w-48 h-12 absolute bottom-5 right-5 text-black text-xl font-bold " onClick={() => handleButtonClick(0)}>
+      <button className="bg-[#BBD9B0] hover:bg-[#9DC88E] rounded pl-4 pr-4 py-2 px-3 absolute bottom-5 right-5 text-xl hover:scale-110 ease-in-out duration-200" onClick={() => handleButtonClick(0)}>
         Update Status
       </button>
     </div>

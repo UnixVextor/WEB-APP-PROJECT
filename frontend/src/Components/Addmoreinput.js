@@ -7,7 +7,7 @@ function Addmoreinput() {
         'ร้านไอหนวด',
         'ร้านมามาก๋วยเตี๋ยวเรือ',
         'ร้านณรงค์ข้าวมันไก่',
-        'ร้านบิลเลียน',
+        'ร้านมิลเลียน',
         'ร้านอิดริส',
         'ร้านไอเย็น',
         'ร้านพี่ฝนกาแฟสด&น้ำปั่น',
@@ -21,11 +21,10 @@ function Addmoreinput() {
     const [selectedValue, setSelectedValue] = useState('')
     console.log(selectedValue)
 
-    const [foodName,setFoodName] = useState('')
     const [inputList, setinputList] = useState([{
         foodName: '',
-        // storeName: '',
-        // value: '',
+        storeName: '',
+        value: '',
     }]);
 
     const handleinputchange = (e, index) => {

@@ -1,27 +1,34 @@
 import './App.css';
-import Header from './Components/Header';
-import Home from './Home';
-import MenuTechNoInter from './MenuTechNoInter';
-import MenuPaSri from './MenuPaSri';
-import MenuINhauy from './MenuINhauy';
-import MenuMaMa from './MenuMaMa';
-import MenuNaRong from './MenuNaRong';
-import MenuBillion from './MenuBillion';
-import MenuItList from './MenuItList';
-import MenuIYen from './MenuIYen';
-import MenuPFon from './MenuPFon';
-import MenuOChaNa from './MenuOChaNa';
-import MenuCurry from './MenuCurry';
+//pichhh
+import Home from './Pages/Home';
+import MenuTechNoInter from './Pages/MenuTechNoInter';
+import MenuPaSri from './Pages/MenuPaSri';
+import MenuINhauy from './Pages/MenuINhauy';
+import MenuMaMa from './Pages/MenuMaMa';
+import MenuNaRong from './Pages/MenuNaRong';
+import MenuBillion from './Pages/MenuBillion';
+import MenuItList from './Pages/MenuItList';
+import MenuIYen from './Pages/MenuIYen';
+import MenuPFon from './Pages/MenuPFon';
+import MenuOChaNa from './Pages/MenuOChaNa';
+import MenuCurry from './Pages/MenuCurry';
 
+//petch
+import Header from './Components/Header';
+import AuthNavbar from './Components/AuthNavbar';
 import Registration from './Pages/Registration';
 import Login from './Pages/Login';
+import EditProfile from './Pages/EditProfile';
 import ChoiceForOrder from './Pages/ChoiceForOrder';
 import ChooseStore from './Pages/ChooseStore';
 import OrderText from './Pages/OrderText';
 import StatusOrder from './Pages/StatusOrder';
-import ContectUs from './ContectUs';
 
-//import rider side
+//Mimi
+import Review from './Pages/Review';
+import ContectUs from './Pages/ContectUs';
+
+//import rider side - Ohm
 import OrderDetail from './Pages/OrderDetail';
 import YourOrder from './Pages/YourOrder';
 import ReceiveOrder from './Pages/ReceiveOrder';
@@ -30,14 +37,20 @@ import RoutingOrderPage from './Pages/RoutingOrderPage';
 const App = () => {
   return (
     <div className="App font-noto">
+      {/* Petch */}
       <Header />
-      {/* <Registration /> */}
-      {/* <Login /> */}
-      {/* <ChoiceForOrder /> */}
-      {/* <ChooseStore /> */}
-      {/* <ชื่อไฟล์></> */}
+      {/* <AuthNavbar /> */}
+      {/* <Registration />
+      <Login />
+      <EditProfile />
+      <ChoiceForOrder />
+      <ChooseStore />
+      <OrderText />
+      <StatusOrder /> */}
+
+      {/* Pichhh */}
       <Home/>
-      <MenuTechNoInter/>
+      {/* <MenuTechNoInter/>
       <MenuPaSri/>
       <MenuINhauy/>
       <MenuMaMa/>
@@ -47,18 +60,18 @@ const App = () => {
       <MenuIYen/>
       <MenuPFon/>
       <MenuOChaNa/>
-      <MenuCurry/>
-      {/* <Login />  */}
-      {/* <ChoiceForOrder /> */}
-      {/* <ChooseStore /> */}
-      {/* <OrderText /> */}
+      <MenuCurry/> */}
+
+      {/* Mimi */}
+      {/* <Review /> */}
+      {/* <ContectUs/> */}
+
+      {/* Ohm */}
       {/* <OrderDetail /> */}
       {/* <YourOrder /> */}
-      <ContectUs/>
       {/* <ReceiveOrder /> */}
       {/* <RoutingOrderPage /> */}
-      {/* <StatusOrder /> */}
-      <StatusOrder />
+
     </div>
   );
 }

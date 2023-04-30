@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\Backend_MongoDb\\Backend_MongoDb.csproj": {}
+    "E:\\WebAppProject\\WEB-APP-PROJECT\\Backend_MongoDb\\Backend_MongoDb.csproj": {}
   },
   "projects": {
-    "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\Backend_MongoDb\\Backend_MongoDb.csproj": {
+    "E:\\WebAppProject\\WEB-APP-PROJECT\\Backend_MongoDb\\Backend_MongoDb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\Backend_MongoDb\\Backend_MongoDb.csproj",
+        "projectUniqueName": "E:\\WebAppProject\\WEB-APP-PROJECT\\Backend_MongoDb\\Backend_MongoDb.csproj",
         "projectName": "Backend_MongoDb",
-        "projectPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\Backend_MongoDb\\Backend_MongoDb.csproj",
-        "packagesPath": "C:\\Users\\CyberGEN\\.nuget\\packages\\",
-        "outputPath": "D:\\KMITL\\KMITL@2.65\\Web App\\WEB-APP-PROJECT\\Backend_MongoDb\\obj\\",
+        "projectPath": "E:\\WebAppProject\\WEB-APP-PROJECT\\Backend_MongoDb\\Backend_MongoDb.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "E:\\WebAppProject\\WEB-APP-PROJECT\\Backend_MongoDb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CyberGEN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -81,8 +79,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -94,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     }

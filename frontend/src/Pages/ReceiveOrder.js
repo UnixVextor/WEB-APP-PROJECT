@@ -15,6 +15,7 @@ function ReceiveOrder() {
             });
     };
 
+
     useEffect(() => {
         axios.get('https://example.com/orders')
             .then(response => {
@@ -25,14 +26,14 @@ function ReceiveOrder() {
             });
     }, []);
 
-    return(
+    return (
         <div>
             <div className="text-[26px] mt-5 mb-5 font-bold">Order can be accepted</div>
             {orders.length === 0 ? (
                 <div className="text-xl text-center">No orders yet</div>
             ) : (
                 orders.map(order => (
-                    <div className="grid grid-col-2 grid-flow-col gap-10 bg-white rounded-[30px] pl-4 pr-4 w-4/5 h-342 m-auto mt-5" style={{ backgroundColor: '#CFC7B1' }}>
+                    <div className="grid bg-white rounded-[30px] p-5 w-4/5 h-342 m-auto mt-5" style={{ backgroundColor: '#CFC7B1' }}>
                         <div>
                             <div className="text-black text-2xl mt-5 mb-5 text-left">
                                 <div style={{ fontSize: '24px' }}>Name: {order.name}</div>
@@ -43,7 +44,7 @@ function ReceiveOrder() {
                                 <div style={{ fontSize: '24px' }}>Address: {order.address}</div>
                             </div>
                         </div>
-                        <div className="flex justify-end items-end" style={{ marginTop: 'auto' }}>
+                        <div className="flex justify-end items-end ">
                             <button className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => handleAcceptOrder(order.userID)}>
                                 Accept
                             </button>
@@ -52,12 +53,12 @@ function ReceiveOrder() {
                 ))
             )}
             <div className="fixed bottom-0 left-0 mb-5 ml-5">
-                <button className="bg-green-400 hover:bg-green-500 text-white font-bold py-2 px-4 rounded-full">
+                <button className="bg-[#ECD8A5] hover:bg-[#E3C67B] rounded pl-4 pr-4 py-2 px-3 text-xl hover:scale-110 ease-in-out duration-200">
                     HOME
                 </button>
             </div>
         </div>
-    );  
+    );
 }
 
 export default ReceiveOrder;

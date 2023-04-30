@@ -69,12 +69,12 @@ function OrderText() {
             </div>
 
             <div class="flex justify-evenly m-auto ">
-                <button class="bg-[#ECD8A5] hover:bg-[#E3C67B] text-xl rounded font-medium py-3 px-3 mt-6 mb-5">
+                <button class="bg-[#CDC5AF] hover:bg-[#B9AE90] text-lg rounded font-medium py-3 px-3 mt-6 mb-5 hover:scale-110 ease-in-out duration-200">
                     กลับไปที่หน้าเมนู
                 </button>
-                <button class="bg-[#BBD9B0] hover:bg-[#9DC88E] text-xl rounded font-medium py-3 px-3 mt-6 mb-5"
+                <button class="bg-[#BBD9B0] hover:bg-[#9DC88E] text-lg rounded font-medium py-3 px-3 mt-6 mb-5 hover:scale-110 ease-in-out duration-200"
                     onClick={() => handleSumOrder()}>
-                    สรุปรายการอาหาร
+                    ยืนยันรายการอาหาร
                 </button>
             </div>
 
