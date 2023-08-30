@@ -1,13 +1,14 @@
 import React from 'react';
 import axios from 'axios';
+import Header from '../Components/Header';
 import { Fragment, useState } from 'react';
-// import { useNavigate, Link } from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import Upload from '../Components/upload';
 
 function Registration() {
-    const [error, setError] = useState('กรอกข้อมูลไม่ถูกต้อง');
+    // const [error, setError] = useState('กรอกข้อมูลไม่ถูกต้อง');
 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
     const [firstname, setFirstname] = useState('')
     const [lastname, setLastname] = useState('')
     const [username, setUsername] = useState('')
@@ -24,7 +25,6 @@ function Registration() {
             await onsubmit()
         }
     }
-
     const onsubmit = async () => {
         if (firstname.length === 0 || lastname.length === 0 || username.length === 0 || email.length === 0 || phoneNumber.length === 0) {
             setCheckInvalid(true)
@@ -36,34 +36,44 @@ function Registration() {
             setPasswordRecheck(false)
             setCheckInvalid(false)
             try {
-                const data = await axios.post(`${process.env.REACT_APP_API}/Auth/Register`, {
-                    FirstName: firstname,
-                    LastName: lastname,
-                    Username: username,
-                    Email: email,
-                    PhoneNumber: phoneNumber,
-                    Password: password
+                await axios.post(`https://localhost:7276/User`, {
+                    userName: username,
+                    email: email,
+                    password: password,
+                    phoneNumber: phoneNumber,
+                    name: firstname,
+                    lastName: lastname
+                }).then((res)=>{
+                    console.log(res);
+                    navigate('/login')
+                    
+                }).catch(()=>{
+                    alert('รหัสนักศึกษานี้ถูกใช้แล้ว')
                 })
-                console.log(data.status)
+                ;
+
 
                 //if Success go to login
-                if (data.status === 200) {
-                    // navigate('/login')
-                    window.location.reload()
-                }
+                // if (response.status === 200) {
+                //     navigate('/login')
+                //     window.location.reload()
+                // }
 
             } catch (err) {
                 console.log(err.response.status)
                 if (err.response.status === 400) {
-                    // setCheckInvalid(true)
-                    setPasswordRecheck(false)
+                    setCheckInvalid(true);
+                    setPasswordRecheck(false);
                 }
             }
         }
     }
+    
+
 
     return (
         <Fragment>
+            <Header />
             <div class='grid grid-flow-col gap-5 bg-white rounded-[30px] pl-5 pr-5 sm:pl-10 sm:pr-10 xl:pl-0 m-auto mt-[16px] mb-[2px] sm:w-4/5'>
                 <img
                     src="https://i.ibb.co/bFZLMgd/Food-Fast-For-U.png"

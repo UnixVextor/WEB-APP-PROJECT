@@ -1,9 +1,11 @@
 import React, { Fragment, useState } from 'react';
-import axios from 'axios';
+import Header from '../Components/Header';
 
 function Home() {
     return (
         <Fragment>
+            {/* Header */}
+            <Header />
             {/* main */}
             <section class="bg-[#F5EED5] flex justify-center pt-32">
                 {/* BG */}

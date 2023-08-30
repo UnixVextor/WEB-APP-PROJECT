@@ -1,9 +1,13 @@
 import React, { Fragment, useState } from 'react';
-import axios from 'axios';
+import AuthNavbar from '../Components/AuthNavbar';
+import { useNavigate } from 'react-router-dom';
 
 function MenuNaRong() {
+    const navigate = useNavigate();
+
     return (
         <Fragment>
+            <AuthNavbar />
             <div class="grid grid-cols-30 grid-rows-1">
                 <div class="col-span-4 p-3 text-4xl border-8 border-transparent">ร้านณรงค์ข้าวมันไก่</div>
                 <div class="p-3 bg-[#B9DBAD]">
@@ -32,8 +36,8 @@ function MenuNaRong() {
                 </div>
             </div>
             <div class="flex justify-evenly">
-                <button type="button" class="bg-[#CDC5AF] hover:bg-[#B9AE90] text-lg rounded py-2 px-3 mt-6 mb-6 hover:scale-110 ease-in-out duration-200">กลับไปหน้าร้านอาหาร</button>
-                <button type="button" class="bg-[#BBD9B0] hover:bg-[#9DC88E] text-lg rounded py-2 px-3 mt-6 mb-6 hover:scale-110 ease-in-out duration-200">ต่อไป</button>
+                <button type="button" onClick={() => {navigate("/user/restaurant")}} class="bg-[#CDC5AF] hover:bg-[#B9AE90] text-lg rounded py-2 px-3 mt-6 mb-6 hover:scale-110 ease-in-out duration-200">กลับไปหน้าร้านอาหาร</button>
+                <button type="button" onClick={() => {navigate("/user/order")}} class="bg-[#BBD9B0] hover:bg-[#9DC88E] text-lg rounded py-2 px-3 mt-6 mb-6 hover:scale-110 ease-in-out duration-200">ต่อไป</button>
             </div>
         </Fragment>
     )

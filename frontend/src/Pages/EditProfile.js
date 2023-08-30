@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Fragment, useState } from 'react';
 // import { useNavigate, Link } from "react-router-dom"
 import Upload from '../Components/upload';
+import AuthNavbar from '../Components/AuthNavbar';
 
 function EditProfile() {
 
@@ -65,13 +66,14 @@ function EditProfile() {
 
     return (
         <Fragment>
+            <AuthNavbar />
             <div class='grid grid-flow-col gap-5 bg-white rounded-[30px] pl-5 pr-5 sm:pl-10 sm:pr-10 xl:pl-0 m-auto mt-[16px] mb-[2px] sm:w-4/5'>
                 <img
                     src="https://i.ibb.co/bFZLMgd/Food-Fast-For-U.png"
                     class="hidden xl:block w-[483px]"
                     alt="..." />
                 <div>
-                    <div class='text-[calc(80%+0.8vmin)] mt-6 mb-2'>แก้ไข้ข้อมูลของท่าน</div>
+                    <div class='text-[calc(80%+0.8vmin)] mt-6 mb-2'>แก้ไข้ข้อมูล</div>
                     <div class="flex flex-col-reverse md:grid gap-2 md:grid-cols-2">
                         <div>
                             <div class="mb-3">

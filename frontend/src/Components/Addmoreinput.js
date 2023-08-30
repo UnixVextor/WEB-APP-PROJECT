@@ -42,6 +42,7 @@ function Addmoreinput() {
 
     const handleaddclick = () => {
         setinputList([...inputList, { foodName: '', storeName: '', value: '', }]);
+        console.log(inputList);
     }
 
     return (
@@ -57,15 +58,10 @@ function Addmoreinput() {
                         ร้านอาหาร
                     </label>
                 </div>
-                <div class="col-span-2">
+                <div class="col-span-3">
                     <label class="font-m text-[calc(70%+0.8vmin)]">
                         จำนวน
                     </label>
-                </div>
-                <div class="col-span-1">
-                    <button class="align-middle bg-[#BBD9B0] hover:bg-[#9DC88E] rounded py-1 px-1 sm:py-2 sm:px-2" onClick={handleaddclick}>
-                        <IoMdAdd />
-                    </button>
                 </div>
             </div>
             {inputList.map((x, i) => {
@@ -75,29 +71,10 @@ function Addmoreinput() {
                             <input type="text" name="foodName" class="text-[calc(70%+0.8vmin)] border-[#CFC7B1] rounded w-full p-1" placeholder="ระบุชื่ออาหาร" onChange={e => handleinputchange(e, i)} />
                         </div>
                         <div class="col-span-3">
-                            <select class="text-[calc(70%+0.8vmin)] border-[#CFC7B1] rounded w-full p-1" onChange={(e) => { setSelectedStore(e.target.value) }}>
-                                {
-                                    stores.map(store => {
-                                        return <option>{store}</option>
-                                    })
-                                }
-                            </select>
-                            {/* <input type="text" name="storeName" class="text-[calc(70%+0.8vmin)] border-[#CFC7B1] rounded w-full p-1" placeholder="ระบุชื่อร้าน" onChange={e => handleinputchange(e, i)} /> */}
+                            <input type="text" name="storeName" class="text-[calc(70%+0.8vmin)] border-[#CFC7B1] rounded w-full p-1" placeholder="ระบุชื่อร้าน" onChange={e => handleinputchange(e, i)} />
                         </div>
-                        <div class="col-span-2">
-                            <select class="text-[calc(70%+0.8vmin)] border-[#CFC7B1] rounded w-full p-1" onChange={(e) => { setSelectedValue(e.target.value) }}>
-                                {
-                                    values.map(value => {
-                                        return <option>{value}</option>
-                                    })
-                                }
-                            </select>
-                            {/* <input type="text" name="value" class="text-[calc(70%+0.8vmin)] border-[#CFC7B1] rounded w-full p-1" placeholder="ระบุจำนวน" pattern="[1-9]{1}" onChange={e => handleinputchange(e, i)} /> */}
-                        </div>
-                        <div class="col-span-1">
-                            <button class="align-middle bg-[#ECD8A5] hover:bg-[#E3C67B] rounded py-1 px-1 sm:py-2 sm:px-2" onClick={() => handleremove(i)}>
-                                <IoMdClose />
-                            </button>
+                        <div class="col-span-3">
+                            <input type="text" name="value" class="text-[calc(70%+0.8vmin)] border-[#CFC7B1] rounded w-full p-1" placeholder="ระบุจำนวน" pattern="[1-9]{1}" onChange={e => handleinputchange(e, i)} />
                         </div>
                     </div>
                 );

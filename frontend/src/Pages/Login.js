@@ -1,9 +1,16 @@
 import React, { Fragment, useState } from 'react';
+import {Link, useNavigate} from 'react-router-dom';
+import Header from '../Components/Header';
 import axios from 'axios';
+import jwtDecode from 'jwt-decode';
+import Cookies from 'universal-cookie';
+
 
 function Login() {
+    const cookies = new Cookies();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const handleUsernameChange = (value) => {
         setUsername(value);
@@ -12,26 +19,33 @@ function Login() {
         setPassword(value);
     };
 
-    const handleSignIn = () => {
-        // api_name : state_name
-        const data = {
-            username: username,
-            password: password,
-            IsActive: 1
-        };
-        alert('data saved') //debug
+    const handleSignIn = async  () => {
+        try{
+        const response = await axios.post(`https://localhost:7276/User/Authenticate`,{
+            userName: username,
+            password: password
+        }).then((res)=>{
+            localStorage.setItem('token',"Bearer "+res.data);
+            navigate('/user');
+        }).catch((err)=>{
+            console.log(err.response.data)
+            if (err.response.status == 401){
+                alert('ข้อมูลผิดพลาด');
+            }
+        });
+        }catch(err){
+            console.log(err.response.data)
+            if (err.response.status == 404){
+                alert(err.response.data['message']);
+            }
+
+        }
     }
 
-    const url = ''; //api.url
-    axios.post(url.data).then((result) => {
-        if (result.data == 'Data inserted.')
-            alert('data saved');
-        else
-            alert(result.data)
-    })
 
     return (
         <Fragment>
+            <Header />
             <div class='grid grid-col-2 grid-flow-col gap-10 bg-white rounded-[30px] pl-4 pr-4 w-4/5 sm:w-3/5 md:w-3/5 lg:w-3/5 xl:w-2/5 m-auto mt-5'>
                 <div>
                     <div class='text-[30px] mt-5 mb-5'>ลงชื่อเข้าใช้</div>
@@ -54,7 +68,7 @@ function Login() {
                         <div class='text-[20px]'>
                             ไม่มีบัญชีใช่หรือไม่ ?
                         </div>
-                        <a class='bg-[#ECD8A5] hover:bg-[#E3C67B] text-[20px] rounded w-full mb-2'>ลงทะเบียน</a>
+                        <Link to='/register' class='bg-[#ECD8A5] hover:bg-[#E3C67B] text-[20px] rounded w-full mb-2'>ลงทะเบียน</Link>
                     </div>
                 </div>
             </div>

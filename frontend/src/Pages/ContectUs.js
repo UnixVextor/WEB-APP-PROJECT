@@ -1,10 +1,14 @@
 import React from "react";
+import Header  from "../Components/Header";
 import { Fragment, useState } from "react";
 import { BsGithub } from "react-icons/bs"
+import { Location, useLocation } from "react-router-dom";
+import AuthNavbar from "../Components/AuthNavbar";
 
 function ContectUs() {
     const [rateValue, setRateValue] = useState(0);
     const [isSubmit, setIsSubmit] = useState(false);
+    let location = useLocation();
 
     const handleSubmit = () => {
         if (rateValue) {
@@ -13,6 +17,7 @@ function ContectUs() {
     };
     return (
         <Fragment>
+            {location.state === "Login success" ? <AuthNavbar />:<Header />}
             <div class="grid sm:grid-cols-2 sm:grid-flow-col justify-center gap-5 m-auto ml-10 mr-10 mt-10">
                 <div class="group grid justify-center">
                     <span class="flex justify-start font-bold text-3xl mb-4 gap-5">

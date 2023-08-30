@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 
 function Header() {
 
@@ -7,10 +8,10 @@ function Header() {
             <div class="relative z-20 bg-[#E6EBA9]">
                 <div class="px-6 lg:container lg:mx-auto lg:px-6 lg:py-2">
                     <div class="flex items-center justify-between">
-                        <a href="#" class="flex relative z-20 items-center">
+                        <Link to='/' class="flex relative z-20 items-center">
                             <img class="w-16 md:w-[4.5rem] h-auto" src="https://imgz.io/images/2023/04/29/logoWebapp9874287d65c04354.png" alt="logoWebapp9874287d65c04354.png"/>
                             <label class="font-bold text-[24px]">FoodFastForU</label>
-                        </a>
+                        </Link>
 
                         <div class="flex items-center justify-end border-l lg:border-l-0">
                             <input type="checkbox" name="hamburger" id="hamburger" class="peer hidden" hidden />
@@ -23,19 +24,19 @@ function Header() {
                                 <div class="flex flex-col h-full justify-between lg:items-center lg:flex-row">
                                     <ul class="px-6 pt-32 text-gray-700 space-y-8 md:px-12 lg:space-y-0 lg:flex lg:space-x-12 lg:pt-0">
                                         <li>
-                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
+                                            <Link to='/contact' class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
                                                 <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">ติดต่อเรา</span>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
+                                            <Link to='/register' class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
                                                 <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">ลงทะเบียน</span>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#" class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
+                                            <Link to='/login' class="group relative before:absolute before:inset-x-0 before:bottom-0 before:h-2">
                                                 <span class="relative font-bold group-hover:text-[#666B2D] text-[calc(80%+0.8vmin)] rounded py-1 px-2">ลงชื่อเข้าใช้</span>
-                                            </a>
+                                            </Link>
                                         </li>
                                         
                                     </ul>
